@@ -36,7 +36,8 @@
   </head>
   <body id="profilepage">
     <div class="contanier">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!-- nav bar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <a class="navbar-brand" href="#">Tweeter</a>
         <button
           class="navbar-toggler"
@@ -81,9 +82,12 @@
         </div>
       </nav>
       <br/>
+      <br/>
+      <br/>
+      <!-- profile card -->
       <div class="row">
-        <div class="col-md-3 offset-md-1">
-          <div class="card" style="width: 15rem; height: 22rem;">
+        <div class="col-md-3 offset-1">
+          <div class="card" style="width: 18rem; height: 22rem;">
             <img
               src="../Images/RyanR.jpg"
               class="card-img-top"
@@ -99,27 +103,43 @@
             </div>
           </div>
         </div>
-        <div class="col-md-5">
-          <div class="card">
+
+        <!-- post card -->
+        <div class="col-md-4">
+          <div class="card" id="postCard" style="width: 34rem; height: 11rem;">
             <div class="card-header">
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Whats happening?" aria-label="Search" id="happening">
-                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Tweet</button>
-                  </form>
+              <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Whats happening?" aria-label="Search" id="happening">
+                  <!-- <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Tweet</button> -->
+              </form>
             </div>
             <div class="card-body">
+              <h6 class="card-text">
+                Daniel Homann<div id="time"></div>
+              </h6>
               <p class="card-text">
-                Daniel Homann @DanielHomann4 <div id="time"></div>
-                <div id="post">Building fake twitter!</div>
+              <div id="post">Building fake twitter!</div>
               </p>
             </div>
           </div>
         </div>
+
+        <!-- who to follow card -->
+        <div class="col-md-3 offset-1">
+            <div class="card" style="width: 18rem; height: 22rem;">
+              <div class="card-body">
+                <h5 class="card-title">Who to Follow</h5>
+                <p class="card-text" id="currentTrends"></p>
+              </div>
+            </div>
+          </div>
       </div>
-      <br />
+
+      <!-- trend card -->
+      <br/>
       <div class="row">
-        <div class="col-md-3 offset-md-1">
-          <div class="card" style="width: 15rem; height: 22rem;">
+        <div class="col-md-3 offset-1">
+          <div class="card" style="width: 18rem; height: 22rem;">
             <div class="card-body">
               <h5 class="card-title">Trends</h5>
               <p class="card-text" id="currentTrends"></p>
