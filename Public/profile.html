@@ -34,7 +34,7 @@
     ></script>
     <title>Tweeter</title>
   </head>
-  <body>
+  <body id="profilepage">
     <div class="contanier">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Tweeter</a>
@@ -78,13 +78,6 @@
               Search
             </button>
           </form>
-          <button
-            class="btn btn-outline-primary my-2 my-sm-0"
-            id="tweet"
-            type="submit"
-          >
-            Tweet
-          </button>
         </div>
       </nav>
       <br/>
@@ -109,10 +102,12 @@
         <div class="col-md-5">
           <div class="card">
             <div class="card-header">
-              Featured
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Whats happening?" aria-label="Search" id="happening">
+                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Tweet</button>
+                  </form>
             </div>
             <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
               <p class="card-text">
                 Daniel Homann @DanielHomann4 <div id="time"></div>
                 <div id="post">Building fake twitter!</div>
