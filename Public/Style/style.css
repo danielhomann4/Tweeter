@@ -26,3 +26,9 @@
 #happening {
     width: 495px;
 }
+
+/* sign up page */
+#signupPage {
+    height: 100%;
+    background-color:#e6ecf0;
+}
