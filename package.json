@@ -1,0 +1,23 @@
+{
+  "name": "tweeter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielhomann4/Tweeter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielhomann4/Tweeter/issues"
+  },
+  "homepage": "https://github.com/danielhomann4/Tweeter#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
