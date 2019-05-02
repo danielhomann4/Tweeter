@@ -34,14 +34,17 @@
     ></script>
     <title>Tweeter</title>
   </head>
-  <body>
+  <body id="signuppage">
+      <!-- jumbotron -->
     <div class="container-fluid">
-      <div class="jumbotron jumbotron-fluid">
+      <div class="jumbotron jumbotron-fluid" style="background-color: #e6ecf0 ;">
         <div class="container">
-          <h1 class="display-4">Join Us Today!</h1>
+          <h1 class="display-4 text-center">Join Us Today!</h1>
         </div>
       </div>
       <br />
+
+      <!-- sign up form -->
       <form class="needs-validation" novalidate>
         <div class="form-row">
           <div class="col-md-4 mb-3">
@@ -51,7 +54,7 @@
               class="form-control"
               id="validationCustom01"
               placeholder="First name"
-              value="Mark"
+              value="John"
               required
             />
             <div class="valid-feedback">
@@ -65,7 +68,7 @@
               class="form-control"
               id="validationCustom02"
               placeholder="Last name"
-              value="Otto"
+              value="Doe"
               required
             />
             <div class="valid-feedback">
