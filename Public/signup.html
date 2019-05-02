@@ -32,12 +32,20 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.0.min.js"
+      integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+      crossorigin="anonymous"
+    ></script>
     <title>Tweeter</title>
   </head>
   <body id="signuppage">
-      <!-- jumbotron -->
+    <!-- jumbotron -->
     <div class="container-fluid">
-      <div class="jumbotron jumbotron-fluid" style="background-color: #e6ecf0 ;">
+      <div
+        class="jumbotron jumbotron-fluid"
+        style="background-color: #e6ecf0 ;"
+      >
         <div class="container">
           <h1 class="display-4 text-center">Join Us Today!</h1>
         </div>
@@ -52,7 +60,7 @@
             <input
               type="text"
               class="form-control"
-              id="validationCustom01"
+              id="firstName"
               placeholder="First name"
               value="John"
               required
@@ -66,7 +74,7 @@
             <input
               type="text"
               class="form-control"
-              id="validationCustom02"
+              id="lastName"
               placeholder="Last name"
               value="Doe"
               required
@@ -84,7 +92,7 @@
               <input
                 type="text"
                 class="form-control"
-                id="validationCustomUsername"
+                id="userName"
                 placeholder="Username"
                 aria-describedby="inputGroupPrepend"
                 required
@@ -100,7 +108,7 @@
           <input
             type="email"
             class="form-control"
-            id="exampleInputEmail1"
+            id="email"
             aria-describedby="emailHelp"
             placeholder="Enter email"
           />
@@ -113,7 +121,7 @@
           <input
             type="password"
             class="form-control"
-            id="exampleInputPassword1"
+            id="password"
             placeholder="Password"
           />
         </div>
@@ -134,7 +142,7 @@
             </div>
           </div>
         </div>
-        <button class="btn btn-primary" type="submit">Join</button>
+        <button class="btn btn-primary" type="submit" id="submit">Join</button>
       </form>
     </div>
     <script>
@@ -164,6 +172,31 @@
           false
         );
       })();
+
+      $("#submit").on("click", function(event) {
+        event.preventDefault();
+        var userInput = {
+        //   photo: $("#photo")
+        //     .val(),
+          scores: [
+            $("#firstName")
+              .val(),
+            $("#lastName")
+              .val(),
+            $("#userName")
+              .val(),
+            $("#email")
+              .val(),
+            $("#password")
+              .val()
+          ]
+        };
+        console.log(userInput);
+        // axios.post("/api/friends", userInput)
+        // .then(function(resp){
+        //   console.log(userInput)
+        // })
+      });
     </script>
   </body>
 </html>
