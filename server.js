@@ -8,6 +8,7 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+require("./Routes/htmlRoutes")(app);
 
 // listen on port 3000
 var PORT = process.env.PORT || 3000;
