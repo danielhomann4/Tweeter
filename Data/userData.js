@@ -4,7 +4,8 @@ let userData = [
         lastName: "homann",
         userName: "danielhomann4",
         email: "email@gmail.com",
-        password: "********"
+        password: "********",
+        profilePic: ""
     }
 ];
 

@@ -44,7 +44,7 @@
     <div class="container-fluid">
       <div
         class="jumbotron jumbotron-fluid"
-        style="background-color: #e6ecf0 ;"
+        style="background-color: #e6ecf0;"
       >
         <div class="container">
           <h1 class="display-4 text-center">Join Us Today!</h1>
@@ -53,103 +53,105 @@
       <br />
 
       <!-- sign up form -->
-      <form class="needs-validation" id="user-form" novalidate>
-        <div class="form-row">
-          <div class="col-md-4 mb-3">
-            <label for="validationCustom01">First name</label>
-            <input
-              type="text"
-              class="form-control"
-              id="firstName"
-              placeholder="First name"
-              value="John"
-              required
-            />
-            <div class="valid-feedback">
-              Looks good!
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <label for="validationCustom02">Last name</label>
-            <input
-              type="text"
-              class="form-control"
-              id="lastName"
-              placeholder="Last name"
-              value="Doe"
-              required
-            />
-            <div class="valid-feedback">
-              Looks good!
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <label for="validationCustomUsername">Username</label>
-            <div class="input-group">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroupPrepend">@</span>
-              </div>
-              <input
-                type="text"
-                class="form-control"
-                id="userName"
-                placeholder="Username"
-                aria-describedby="inputGroupPrepend"
-                required
-              />
-              <div class="invalid-feedback">
-                Please choose a username.
-              </div>
-            </div>
-          </div>
+      <div class="row">
+        <div class="col-md-6 offset-3">
+            <form class="needs-validation" id="user-form" novalidate>
+                <div class="form-row">
+                  <div class="col-md-4 mb-3">
+                    <label for="validationCustom01">First name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="firstName"
+                      placeholder="John"
+                      required
+                    />
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <label for="validationCustom02">Last name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="lastName"
+                      placeholder="Doe"
+                      required
+                    />
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <label for="validationCustomUsername">Username</label>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                      </div>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="userName"
+                        placeholder="Username"
+                        aria-describedby="inputGroupPrepend"
+                        required
+                      />
+                      <div class="invalid-feedback">
+                        Please choose a username.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email Address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    aria-describedby="emailHelp"
+                    placeholder="Enter email"
+                  />
+                  <small id="emailHelp" class="form-text text-muted"
+                    >We'll never share your email with anyone else.</small
+                  >
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    placeholder="Password"
+                  />
+                </div>
+                <form>
+                  <div class="form-group">
+                    <label for="exampleFormControlFile1">Choose a Profile Pic</label>
+                    <input type="file" class="form-control-file" id="profilePic" />
+                  </div>
+                </form>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="invalidCheck"
+                      required
+                    />
+                    <label class="form-check-label" for="invalidCheck">
+                      Agree to terms and conditions
+                    </label>
+                    <div class="invalid-feedback">
+                      You must agree before submitting.
+                    </div>
+                  </div>
+                </div>
+                <a href="/api/users"><button class="btn btn-primary" type="submit" id="submit">Join</button></a>
+              </form>
         </div>
-        <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input
-            type="email"
-            class="form-control"
-            id="email"
-            aria-describedby="emailHelp"
-            placeholder="Enter email"
-          />
-          <small id="emailHelp" class="form-text text-muted"
-            >We'll never share your email with anyone else.</small
-          >
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input
-            type="password"
-            class="form-control"
-            id="password"
-            placeholder="Password"
-          />
-        </div>
-        <form>
-            <div class="form-group">
-              <label for="exampleFormControlFile1">Choose a Profile Pic</label>
-              <input type="file" class="form-control-file" id="exampleFormControlFile1">
-            </div>
-          </form>
-        <div class="form-group">
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              value=""
-              id="invalidCheck"
-              required
-            />
-            <label class="form-check-label" for="invalidCheck">
-              Agree to terms and conditions
-            </label>
-            <div class="invalid-feedback">
-              You must agree before submitting.
-            </div>
-          </div>
-        </div>
-        <button class="btn btn-primary" type="submit" id="submit">Join</button>
-      </form>
+      </div>
     </div>
     <script>
       // Example starter JavaScript for disabling form submissions if there are invalid fields
@@ -182,26 +184,31 @@
       $("#submit").on("click", function(event) {
         event.preventDefault();
         var userInput = {
-        //   photo: $("#photo")
-        //     .val(),
-          scores: [
-            $("#firstName")
-              .val(),
-            $("#lastName")
-              .val(),
-            $("#userName")
-              .val(),
-            $("#email")
-              .val(),
-            $("#password")
-              .val()
+          //   photo: $("#photo")
+          //     .val(),
+          newUser: [
+            $("#firstName").val(),
+            $("#lastName").val(),
+            $("#userName").val(),
+            $("#email").val(),
+            $("#password").val(),
+            $("#profilePic").val()
           ]
         };
         console.log(userInput);
-        // axios.post("/api/friends", userInput)
-        // .then(function(resp){
-        //   console.log(userInput)
-        // })
+        $.post("/signUp/api/users", userInput, function(data) {
+          if (data) {
+            alert("New User Created!");
+          } else {
+            alert("error");
+          }
+          $("#firstName").val(""),
+            $("#lastName").val(""),
+            $("#userName").val(""),
+            $("#email").val(""),
+            $("#password").val(""),
+            $("#profilePic").val("");
+        });
       });
     </script>
   </body>

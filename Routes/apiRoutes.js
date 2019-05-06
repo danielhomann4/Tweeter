@@ -3,7 +3,7 @@ const userData = require("../Data/userData");
 
 
 module.exports = function(app) {
-    app.get("/api/users", function(req, res) {
+    app.get("/signUp/api/users", function(req, res) {
         res.json(userData);
     });
   
@@ -21,11 +21,9 @@ module.exports = function(app) {
     //   });
     // });
   
-    app.post("/api/users", function(req, res) {
-      db.User.create(req.body).then(function(dbUser) {
-        res.json(dbUser);
+    app.post("/signUp/api/users", function(req, res) {
+        
       });
-    });
   
     // app.delete("/api/authors/:id", function(req, res) {
     //   db.Author.destroy({
