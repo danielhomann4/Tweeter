@@ -44,112 +44,116 @@
     <div class="container-fluid">
       <div
         class="jumbotron jumbotron-fluid"
-        style="background-color: #e6ecf0;"
+        style="background-color: #ffffff;"
       >
         <div class="container">
-          <h1 class="display-4 text-center">Join Us Today!</h1>
+          <h1 class="display-4 text-center" style="margin-top: -35px;">Join Us Today!</h1>
         </div>
       </div>
       <br />
 
       <!-- sign up form -->
       <div class="row">
-        <div class="col-md-6 offset-3">
-            <form class="needs-validation" id="user-form" novalidate>
-                <div class="form-row">
-                  <div class="col-md-4 mb-3">
-                    <label for="validationCustom01">First name</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="firstName"
-                      placeholder="John"
-                      required
-                    />
-                    <div class="valid-feedback">
-                      Looks good!
-                    </div>
-                  </div>
-                  <div class="col-md-4 mb-3">
-                    <label for="validationCustom02">Last name</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="lastName"
-                      placeholder="Doe"
-                      required
-                    />
-                    <div class="valid-feedback">
-                      Looks good!
-                    </div>
-                  </div>
-                  <div class="col-md-4 mb-3">
-                    <label for="validationCustomUsername">Username</label>
-                    <div class="input-group">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text" id="inputGroupPrepend">@</span>
-                      </div>
+        <div class="col-md-6 offset-3">          
+          <div class="card" style="width: 45rem; height: 30rem;">
+            <div class="card-body">
+              <form class="needs-validation" id="user-form" novalidate>
+                  <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                      <label for="validationCustom01">First name</label>
                       <input
                         type="text"
                         class="form-control"
-                        id="userName"
-                        placeholder="Username"
-                        aria-describedby="inputGroupPrepend"
+                        id="firstName"
+                        placeholder="John"
                         required
                       />
-                      <div class="invalid-feedback">
-                        Please choose a username.
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <label for="validationCustom02">Last name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="lastName"
+                        placeholder="Doe"
+                        required
+                      />
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <label for="validationCustomUsername">Username</label>
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        </div>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="userName"
+                          placeholder="Username"
+                          aria-describedby="inputGroupPrepend"
+                          required
+                        />
+                        <div class="invalid-feedback">
+                          Please choose a username.
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Email Address</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    aria-describedby="emailHelp"
-                    placeholder="Enter email"
-                  />
-                  <small id="emailHelp" class="form-text text-muted"
-                    >We'll never share your email with anyone else.</small
-                  >
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Password</label>
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="password"
-                    placeholder="Password"
-                  />
-                </div>
-                <form>
                   <div class="form-group">
-                    <label for="exampleFormControlFile1">Choose a Profile Pic</label>
-                    <input type="file" class="form-control-file" id="profilePic" />
-                  </div>
-                </form>
-                <div class="form-group">
-                  <div class="form-check">
+                    <label for="exampleInputEmail1">Email Address</label>
                     <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="invalidCheck"
-                      required
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter email"
                     />
-                    <label class="form-check-label" for="invalidCheck">
-                      Agree to terms and conditions
-                    </label>
-                    <div class="invalid-feedback">
-                      You must agree before submitting.
+                    <small id="emailHelp" class="form-text text-muted"
+                      >We'll never share your email with anyone else.</small
+                    >
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password"
+                      placeholder="Password"
+                    />
+                  </div>
+                  <form>
+                    <div class="form-group">
+                      <label for="exampleFormControlFile1">Choose a Profile Pic</label>
+                      <input type="file" class="form-control-file" id="profilePic" />
+                    </div>
+                  </form>
+                  <div class="form-group">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="invalidCheck"
+                        required
+                      />
+                      <label class="form-check-label" for="invalidCheck">
+                        Agree to terms and conditions
+                      </label>
+                      <div class="invalid-feedback">
+                        You must agree before submitting.
+                      </div>
                     </div>
                   </div>
-                </div>
-                <a href="/api/users"><button class="btn btn-primary" type="submit" id="submit">Join</button></a>
-              </form>
+                  <a href="/api/users"><button class="btn btn-primary" type="submit" id="submit">Join</button></a>
+                </form>
+              </div>  
+          </div>
         </div>
       </div>
     </div>
